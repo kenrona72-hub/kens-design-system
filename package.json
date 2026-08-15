@@ -6,9 +6,6 @@
   "main": "./dist/kens-design-system.js",
   "module": "./dist/kens-design-system.js",
   "types": "./dist/index.d.ts",
-  "sideEffects": [
-    "**/*.css"
-  ],
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
@@ -22,6 +19,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "build:demo": "vite build --config vite.demo.config.ts",
     "typecheck": "tsc --noEmit"
   },
   "peerDependencies": {

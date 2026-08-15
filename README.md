@@ -18,10 +18,15 @@ instead of re-deriving the same CSS.
 
 ```bash
 npm install
-npm run dev      # local preview at src/dev — all components, theme + brand toggle
-npm run build    # emits dist/ (ESM + type declarations + one styles.css)
+npm run dev        # local preview at src/dev — all components, theme + brand toggle
+npm run build      # emits dist/ (ESM + type declarations + one styles.css)
+npm run build:demo # emits demo-dist/ — the same preview, built as a static site
 npm run typecheck
 ```
+
+The `build:demo` output is deployed to GitHub Pages on every push to `main`
+via `.github/workflows/deploy-pages.yml`, so the component showcase always
+reflects the latest `main`.
 
 ## Usage
 
