@@ -1,0 +1,51 @@
+/**
+ * Design tokens - the only layer a new client theme should need to touch.
+ * Override these custom properties (e.g. scope a `[data-brand="hani"]` block)
+ * to reskin every component without editing component CSS.
+ */
+:root {
+  --kds-color-bg: #ffffff;
+  --kds-color-surface: #f7f6f4;
+  --kds-color-surface-hover: #f0eee9;
+  --kds-color-text: #16181d;
+  --kds-color-text-muted: #6b7280;
+  --kds-color-border: #e5e3de;
+  --kds-color-accent: #c9a961;
+  --kds-color-accent-strong: #a5813f;
+  --kds-color-accent-contrast: #16181d;
+
+  --kds-radius-sm: 6px;
+  --kds-radius-md: 12px;
+  --kds-radius-full: 999px;
+
+  --kds-space-1: 4px;
+  --kds-space-2: 8px;
+  --kds-space-3: 12px;
+  --kds-space-4: 16px;
+  --kds-space-6: 24px;
+  --kds-space-8: 32px;
+
+  --kds-font-display: "Playfair Display", Georgia, serif;
+  --kds-font-body: "Jost", "Segoe UI", sans-serif;
+  --kds-font-mono: "IBM Plex Mono", ui-monospace, monospace;
+
+  --kds-shadow-sm: 0 4px 14px -6px rgba(20, 17, 15, 0.18);
+  --kds-shadow-md: 0 12px 28px -12px rgba(20, 17, 15, 0.28);
+
+  --kds-transition: 200ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Optional dark theme - opt in with data-theme="dark" on any ancestor. */
+[data-theme="dark"] {
+  --kds-color-bg: #14110f;
+  --kds-color-surface: #1d1a17;
+  --kds-color-surface-hover: #241f1a;
+  --kds-color-text: #f1ece1;
+  --kds-color-text-muted: #b7b0a0;
+  --kds-color-border: rgba(255, 255, 255, 0.12);
+  --kds-color-accent: #d9bd7c;
+  --kds-color-accent-strong: #c9a961;
+  --kds-color-accent-contrast: #14110f;
+  --kds-shadow-sm: 0 4px 16px -6px rgba(0, 0, 0, 0.5);
+  --kds-shadow-md: 0 14px 30px -12px rgba(0, 0, 0, 0.6);
+}

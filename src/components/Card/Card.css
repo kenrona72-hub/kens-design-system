@@ -1,0 +1,47 @@
+.kds-card {
+  background: var(--kds-color-bg);
+  border: 1px solid var(--kds-color-border);
+  border-radius: var(--kds-radius-md);
+  padding: var(--kds-space-6);
+  box-shadow: var(--kds-shadow-sm);
+  transition: transform var(--kds-transition), box-shadow var(--kds-transition),
+    border-color var(--kds-transition);
+}
+
+.kds-card--flat {
+  border: none;
+  box-shadow: none;
+  background: var(--kds-color-surface);
+}
+
+.kds-card__eyebrow {
+  font-family: var(--kds-font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--kds-color-accent-strong);
+  margin-bottom: var(--kds-space-2);
+}
+
+.kds-card__title {
+  font-family: var(--kds-font-display);
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: var(--kds-color-text);
+  margin-bottom: var(--kds-space-2);
+}
+
+.kds-card__body {
+  color: var(--kds-color-text-muted);
+  font-family: var(--kds-font-body);
+  line-height: 1.6;
+}
+
+.kds-card__footer {
+  margin-top: var(--kds-space-4);
+  padding-top: var(--kds-space-3);
+  border-top: 1px dashed var(--kds-color-border);
+  font-family: var(--kds-font-mono);
+  font-size: 0.85rem;
+  color: var(--kds-color-text-muted);
+}

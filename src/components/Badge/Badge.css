@@ -1,0 +1,25 @@
+.kds-badge {
+  display: inline-flex;
+  align-items: center;
+  font-family: var(--kds-font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: var(--kds-radius-full);
+  border: 1px solid var(--kds-color-border);
+  background: var(--kds-color-surface);
+  color: var(--kds-color-text-muted);
+}
+
+.kds-badge--positive {
+  color: #2f7d4f;
+  border-color: #bfe3cc;
+  background: #eefaf2;
+}
+
+.kds-badge--accent {
+  color: var(--kds-color-accent-strong);
+  border-color: var(--kds-color-accent);
+  background: transparent;
+}

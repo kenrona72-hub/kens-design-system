@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  background: var(--kds-color-bg);
+  color: var(--kds-color-text);
+  font-family: var(--kds-font-body);
+}
+
+.dev-page {
+  min-height: 100vh;
+  background: var(--kds-color-bg);
+}
+
+.dev-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 24px;
+  border-bottom: 1px solid var(--kds-color-border);
+}
+
+.dev-toolbar__actions {
+  display: flex;
+  gap: 8px;
+}
+
+.dev-content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 48px 24px 96px;
+}
+
+.dev-content > :not(:first-child) {
+  margin-top: 48px;
+}
+
+.dev-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.dev-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* Example of a second client theme overriding only the token layer. */
+[data-brand="sage"] {
+  --kds-color-accent: #6b8f71;
+  --kds-color-accent-strong: #4f6f55;
+  --kds-color-accent-contrast: #ffffff;
+}
