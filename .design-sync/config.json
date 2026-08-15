@@ -1,0 +1,11 @@
+{
+  "projectId": "7b127d84-2045-42bc-9d29-57e82f3476f4",
+  "shape": "package",
+  "pkg": "kens-design-system",
+  "globalName": "KensDesignSystem",
+  "extraFonts": [".design-sync/fonts/fonts.css"],
+  "overrides": {
+    "SectionHeading": { "cardMode": "column" }
+  },
+  "readmeHeader": ".design-sync/conventions.md"
+}
